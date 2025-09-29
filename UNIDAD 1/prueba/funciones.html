@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="parrafo1"></p>
+    <script>
+        function prueba(mensaje){
+                return "El mensaje es: "+mensaje;
+                //console.log("El mensaje es: "+mensaje);
+            }
+            prueba("Hola");
+            alert(prueba("Adiós"));
+            document.getElementById("parrafo1").innerHTML=prueba("Pepe");
+    </script>
+</body>
+</html>
