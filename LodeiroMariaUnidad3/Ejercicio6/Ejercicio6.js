@@ -16,9 +16,15 @@ Ej. Para Marcos Prado Fernández sería mpradof
 function ejecuta(){
     let nombre=document.getElementById("nombre").value;
     let nombreSinEs=nombre.replace(/\s/g,"");
+    //1
     document.getElementById("tamaño").innerHTML=`Tamaño del nombre ${nombreSinEs.length}`;
+    //2
     document.getElementById("mM").innerHTML=`Mayúsculas: ${nombre.toLowerCase()} <br> Minúsculas: ${nombre.toUpperCase()}`;
-    
-
-
+    //3
+    let sep=nombre.split(" ");
+    document.getElementById("divi").innerHTML="Nombre: "+sep[0]+"<br>"+"Apellido 1: "+sep[1]+"<br>"+"Apellido 2: "+sep[2];
+    //4    
+    document.getElementById("iniciales").innerHTML=sep[0].substr(0,3)+sep[1]+sep[2].substr(0,3); 
+    //5
+    document.getElementById("3l").innerHTML=sep[0].substr(0,3)+sep[1].substr(0,3)+sep[2].substr(0,3); ;
 }
