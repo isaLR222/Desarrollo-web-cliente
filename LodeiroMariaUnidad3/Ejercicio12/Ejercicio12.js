@@ -1,0 +1,2 @@
+/*Controlar el tiempo de vida de una ventana emergente: Crea una ventana emergente y permite al usuario cerrarla, si el usuario no la cierra se ha de cerrar a los 3 segundos de manera automática.*/
+window.open;
