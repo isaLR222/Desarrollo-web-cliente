@@ -7,13 +7,7 @@
 ◦ El teléfono.
 */
 function ejecuta(){
-    let nombre=document.getElementById("nombre");
-    let apellidos=document.getElementById("apellidos");
-    let telefono=document.getElementById("telefono");
-    let email=document.getElementById("email");
-    let postal=document.getElementById("postal");
-    let ser=email.substr("@");
-    document.getElementById("resultado").innerHTML=`Nombre: ${nombre} Apellidos: ${apellidos} Email: ${email} Servidor: ${ser} Telefono: ${telefono} Postal: ${postal} `;
-   
-
+    let respuesta=prompt("Introduce nombre, apellidos,email, tlf,  y codigo postal");
+    let sep=respuesta.split(" ");
+    document.getElementById("resultado").innerHTML="Nombre: "+sep[0]+"<br>"+"Apellidos: "+sep[1]+"<br>"+"Email: "+sep[2]+"<br>"+"Servidor: "+sep[2].split("@")+"<br>"+"Telefono: "+sep[3]
 }
