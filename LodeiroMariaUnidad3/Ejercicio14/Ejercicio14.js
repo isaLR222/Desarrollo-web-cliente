@@ -8,3 +8,17 @@ T= A  → 10.42.68.XXX
 T= B   → 10.42.69.XXX
 T= C   → 10.52.178.XXX
 */
+function ejecuta(){
+let respuesta=document.getElementById("respuesta");
+let numeros=parseInt(respuesta.slice(-4,-1));
+let letra=respuesta.charAt(respuesta.length-1);
+let ip='';
+ if(numeros>0&&numeros<=255){
+switch(letra){
+    case 't': ip="10.41.68.".concat(numeros);
+    case 'b': ip="10.42.60.".concat(numeros);
+    case 'c': ip="10.52.178.".concat(numeros);
+    }
+    document.getElementById("resultado").innerHTML="Tu ip es: "+ip;
+ } else document.getElementById("resultado").innerHTML="Has introducido mal los digitos";
+}
