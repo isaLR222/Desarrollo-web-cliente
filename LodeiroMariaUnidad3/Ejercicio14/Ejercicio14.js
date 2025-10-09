@@ -9,15 +9,15 @@ T= B   → 10.42.69.XXX
 T= C   → 10.52.178.XXX
 */
 function ejecuta(){
-let respuesta=document.getElementById("respuesta");
+let respuesta=document.getElementById("respuesta").value.toLowerCase();
 let numeros=parseInt(respuesta.slice(-4,-1));
 let letra=respuesta.charAt(respuesta.length-1);
-let ip='';
+let ip="";
  if(numeros>0&&numeros<=255){
 switch(letra){
-    case 't': ip="10.41.68.".concat(numeros);
-    case 'b': ip="10.42.60.".concat(numeros);
-    case 'c': ip="10.52.178.".concat(numeros);
+    case 'a': ip="10.41.68."+numeros; break;
+    case 'b': ip="10.42.60."+numeros;; break;
+    case 'c': ip="10.52.178."+numeros;; break;
     }
     document.getElementById("resultado").innerHTML="Tu ip es: "+ip;
  } else document.getElementById("resultado").innerHTML="Has introducido mal los digitos";
