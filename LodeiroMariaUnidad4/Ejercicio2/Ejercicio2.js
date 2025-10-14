@@ -5,7 +5,7 @@ document.getElementById("ej").addEventListener("click", function () {
     let letra = document.getElementById("letra").value;
     let l = exportado.pos(letra);
     for (let i = 1; i <= 999; i++) {
-        if (i % 3 == l) {
+        if (i % 23 == l) {
             dni.push(i);
         }
     }

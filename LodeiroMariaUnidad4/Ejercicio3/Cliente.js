@@ -5,13 +5,20 @@ export class Cliente{
         this.cuota=cuota;
     }
     mostrarClientes(){
-        return this.nombre+';'+this.localidad+';'+this.cuota+'<br>';
+        return this.nombre+' '+this.localidad+' '+this.cuota+'<br>';
     }
 
     mostrarPorLocalidad(localidad){
-        if(Cliente.localidad==localidad){
+        if(this.localidad==localidad){
             return this.nombre+" "+this.cuota+'<br>';
         }
     }
 
+    cuotaMayor(cuota){
+        if(this.cuota>cuota){
+            return this.nombre+' '+this.localidad+' '+this.cuota+'<br>'
+        }
+    }
+
+    
 }
