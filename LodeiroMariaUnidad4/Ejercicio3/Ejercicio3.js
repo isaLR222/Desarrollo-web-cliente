@@ -8,7 +8,7 @@ let f=new Cliente("David","Bilbao",50);
 let clientes=[a,b,c,d,e,f];
 
 document.getElementById("array").addEventListener("click", function(){
-
+clientes.forEach((cliente)=>`<tr><td>${cliente.nombre}</td></tr>`)
 
 })
 
