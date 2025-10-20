@@ -3,7 +3,8 @@ import { Disco } from "./Disco.js";
 let disco1=new Disco("NombreGenerico", "UnaPersona", 2004, "pop");
 let disco2=new Disco("ahgi", "Ylenia", 1940, "rock");
 let disco3=new Disco("wooo", "Mia Colucci", 2004, "pop");
-exportado.discos=[disco1,disco2,disco3];
+//exportado.discos=[disco1,disco2,disco3];
+exportado.discos.push(disco1);exportado.discos.push(disco2);exportado.discos.push(disco3);
 document.getElementById("cant").addEventListener("click",function(){
     alert(exportado.contar());
 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="www.google.com" id="mienlace">Enlace</a>
+
+    <script>
+        window.addEventListener('load',inicio,false);
+        //window.onload=inicio;
+        function inicio(){
+            document.getElementById("mienlace").addEventListener('click', alertar, false);
+        }
+        
+        function alertar() {
+            alert("Te conectaremos con la página: " + this.href);
+        }
+    </script>
+</body>
+</html>

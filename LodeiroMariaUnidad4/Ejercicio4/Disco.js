@@ -1,4 +1,4 @@
-export class Disco{
+ class Disco{
     constructor(nombre, autor, año, genero){
         this.nombre=nombre;
         this.autor=autor;
@@ -20,4 +20,8 @@ export class Disco{
     mostrarInf(){
         return this.nombre+" "+this.autor+" "+this.año+" "+this.localizacion+" "+this.prestado+" "+this.caratula;
     }
+}
+
+export{
+    Disco
 }
