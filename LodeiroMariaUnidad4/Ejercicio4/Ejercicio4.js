@@ -13,9 +13,9 @@ document.getElementById("cant").addEventListener("click",function(){
 document.getElementById("info").addEventListener("click",function(){
     let r=prompt("1-Ordenados alfabeticos 2-Ordenados al revés");
     switch(r){
-        case "1": document.getElementById("resultado").innerHTML= exportado.listOrdenada();
+        case "1": document.getElementById("resultado").innerHTML= exportado.discos.listOrdenada(); alert(exportado.discos.listOrdenada());
 
-        case "2": document.getElementById("resultado").innerHTML= exportado.listOrdenadaR();
+        case "2": document.getElementById("resultado").innerHTML= exportado.discos.listOrdenadaR();
 
         default: alert("error");
     }
@@ -29,5 +29,10 @@ document.getElementById("intervalo").addEventListener("click",function(){
 
 document.getElementById("añadir").addEventListener("click",function(){
     let nombre=prompt("Introduce nombre del disco");
+    let autor=prompt("Introduce autor del disco");
+    let año=prompt("Introduce año");
+    let genero=prompt("Introduce genero del disco");
+    let imagen=prompt("Introduce imagen");
     
+    exportado.discos.push(new Disco(nombre,autor,año,genero,imagen));
 })
